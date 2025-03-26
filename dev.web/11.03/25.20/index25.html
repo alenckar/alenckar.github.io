@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de IMC</title>
+
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: #c4bbdd;
+}
+
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    color: #533d0b;
+    background-color: #b9884a;
+    /* background-image: url(Design\ sem\ nome.png); */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset {
+    background-color: #e4cc7f;
+    border: solid #562C1A;
+    padding: 20px;
+    border-radius: 7px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 30px #533c1d;
+    width: 300px;
+}
+
+h2{
+    text-align: center;
+}
+
+
+input[type="number"] {
+    width: 60%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    background-color: #faead7;
+    border-color: #e6dffa;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    background-color: #faead7;
+    border-color: #e6dffa;
+    }
+
+input[type="button"] {
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(228, 193, 165);
+	width:90px;
+	height:50px;
+    border-color: #4b2210;
+	background-color:#783619;
+	border-radius: 0px 20px 20px 20px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.1);
+    transition:0.3s;
+    background-color: #5e3405;
+}
+
+#resultado {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #552c06b6;
+}
+
+    </style>
+
+</head>
+<script src="script.js"></script>
+
+<body>
+    <fieldset>
+
+   <h2>Bem vindo a calculadora de IMC!</h2>
+
+   <form>
+    <div id="body"
+
+    <label for="nome">
+         nome:<br / >
+        <input type="text" id="nome" <br>
+    </label>
+    
+    <br>
+    <br>
+
+   <label for="peso">
+
+    insira seu peso: <br / >
+
+    <input type="number" id="peso" <br>
+  
+   
+
+    <br>
+    <br>
+
+    <label for="altura">
+        insira sua altura: <br / >
+        <input type="number" id="altura" <br />
+        
+    <br />
+    <br />
+   
+    <input type="button" id="calc" value="Calcular" onclick="calcular()" />
+
+    <p id="resultado"></p>
+
+   
+</form>
+</fieldset>
+
+
+</body>
+</html
