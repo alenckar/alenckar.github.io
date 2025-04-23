@@ -2,59 +2,56 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+}
 
-  --cor-primaria: rgb(196, 0, 0);
-  --cor-secundaria: rgb(9, 26, 123);
-  --cor-terciaria: rgb(32, 61, 26);
+fieldset {
+  font-family: Verdana, Geneva, sans-serif;
+  width: 400px;
+  padding: 30px;
+  color: rgb(185, 199, 231);
+  background-color: rgb(67, 91, 143);
+  text-align: center;
+  border-color: rgb(209, 210, 255);
+  border-radius: 7px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 30px rgb(149, 165, 201);
 }
 
 body {
-  background-color: rgb(183, 224, 189);
-}
-header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-top: 10px;
-  border-radius: 1rem;
+  background-color: rgb(90, 103, 133);
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-
-  background-color: rgb(18, 134, 66);
-  color: var(--cor-terciaria);
-}
-h2 {
-  display: flex;
   align-items: center;
-  color: rgb(37, 59, 32);
-  margin: 10px;
+  height: 100vh;
 }
 
-main {
-  align-items: center;
-  justify-content: center;
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 300%;
 }
 
-section {
-  background-color: rgb(156, 204, 164);
-  border-radius: 1rem;
+input {
+  background-color: rgb(90, 103, 133);
+  color: rgb(191, 205, 235);
 }
-summary {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: left;
-  color: rgb(48, 70, 45);
+::placeholder {
+  color: rgb(205, 215, 236);
 }
-p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(255, 244, 244);
-  background-color: rgb(94, 116, 88);
-  border-radius: 5px;
-  width: 200px;
+option {
+  background-color: rgb(67, 78, 104);
+  color: rgb(162, 175, 204);
 }
 
-i {
-  color: #c5ebb6;
+select {
+  background-color: rgb(90, 103, 133);
 }
-hr {
-  color: rgb(36, 59, 25);
+
+button[type="button"] {
+  background-color: rgb(45, 62, 109);
+  color: rgb(195, 215, 238);
+}
+
+button[type="reset"] {
+  background-color: rgb(45, 62, 109);
+  color: rgb(195, 215, 238);
 }

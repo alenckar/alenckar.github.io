@@ -1,117 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niveis</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+  </head>
+  <body>
+    <fieldset>
+      <form action="">
+        <h1>Tabuada</h1>
 
-<body>
-    <header>
-        <div>
-    <h1>Cabeçalho</h1>
-    <i class="fa fa-star"></i>
-    <br>
-    <h2>Alex Alencar e Pyetro Kawan</h2>
-   
+        <label for="id_numero"
+          >Número:
+          <input
+            type="number"
+            name="numero"
+            id="id_numero"
+            placeholder="Informe um número"
+          />
+        </label>
 
+        <br /><br />
+        <br />
+        <label for="operacao">
+          Operação:
+          <select name="operacao" id="operacao">
+            <option value="" disabled selected>Selecione a operação</option>
+            <option value="+">Adição</option>
+            <option value="-">Subtração</option>
+            <option value="*">Multiplicação</option>
+            <option value="/">Divisão</option>
+          </select>
+        </label>
+
+        <br /><br />
+        <br />
+        <div class="botoes">
+          <button type="button" onclick="calcular()">Calcular</button>
+          <button type="reset">Limpar</button>
         </div>
 
-    </header>   
+        <div id="resultado"></div>
+      </form>
+    </fieldset>
 
-    <main>
-<br>
-<section>
-<details>
-        <summary>Fevereiro</summary>
-        <br>
-<details>
-            <summary>atividade 01</summary>
-            
-                <p>em sala de aula</p>
-                <a 
-                href="atv1.html"
-                target="_blank"
-            >impressão de informações básicas</a>
-
-        </details>
-        <br>
-
-                        <details>
-                            <summary>atividade 02</summary>
-                        <p>em java script</p>
-                        <a 
-                        href="atv2.html"
-                        target="_blank"
-                    >atvidade de true/false</a>
-
-  </details>
-  <br>
-
-  <details>
-    <summary>atividade 03</summary>
-<p>em java script</p>
-<a 
-href="impar_par.html"
-target="_blank"
->atvidade de impar e par</a>
-
-</details>
-
-
-      <br>
-         <details>
-               <summary>atividade 04</summary>
-
-            <p>Tabela de IMC</p>
-                  <a 
-                  href="index25.html"
-                    target="_blank"
-            >Tabela de IMC</a>
-  </details>
-  <br>
-  <details>
-    <summary>atividade 05</summary>
-<p>em java script</p>
-<a 
-href="atv5.html"
-target="_blank"
->Lista de jogadores</a>
-
-</details>
-<br>
-<details>
-    <summary>atividade 06</summary>
-<p>em java script</p>
-<a 
-href="atv6.html"
-target="_blank"
->operador ternario</a>
-
-</details>
-                            
-                </details>
-        </details>
-     </details>
-</details>
-</section>   
-
-<hr>
-
-<section>
-    <details>
-        <summary>março</summary>
-        <p>apontador</p>
-<a 
-href="index.html"
-target="_blank"
->apontador de atividades</a>
-</details>
-                     
-    </details>
-</section>
-    </main>
-</body>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </body>
 </html>
